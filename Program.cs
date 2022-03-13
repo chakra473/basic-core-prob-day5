@@ -8,14 +8,13 @@ namespace basic_core_problems
         {
             Console.WriteLine("enter the number");
             int num = int.Parse(Console.ReadLine());
-            int a = 1
-               ;
-            for (int i = 1; i <= num; i++)
+            double a = 0;
+            for (double i = 1; i <= num; i++)
             {
-                a = a * 2;
+                a = a+1/i;
             }
 
-            Console.WriteLine("2 power of {0} is {1}", num, a);
+            Console.WriteLine("{0}th harmonic value is {1}", num, a);
 
         }
     }
