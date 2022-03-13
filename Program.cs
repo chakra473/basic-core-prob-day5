@@ -6,17 +6,19 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the number to check whether it is even or odd");
-            int n=int.Parse(Console.ReadLine());
-            if (n % 2 == 0)
+            Console.WriteLine("enter an alphabet to check whether it is vowel or not");
+            char vowel=char.Parse(Console.ReadLine());
+            switch (vowel)
             {
-                Console.WriteLine("{0} is an even number ", n);
+                case 'a':Console.WriteLine("a is vowel");break;
+                    case 'e':Console.WriteLine("e is vowel");break;
+                case 'i':Console.WriteLine("i is vowel");break;
+                case 'o':Console.WriteLine("o is vowel");break;
+                case 'u':Console.WriteLine("u is vowel");break;
+                    default:Console.WriteLine("{0} is consonant",vowel);break;
             }
-            else
-            {
-                Console.WriteLine("{0} is an odd number", n);
 
-            }
+           
             
         }
     }
