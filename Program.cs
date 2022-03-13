@@ -8,14 +8,19 @@ namespace basic_core_problems
         {
             Console.WriteLine("enter the number");
             int num = int.Parse(Console.ReadLine());
-            double a = 0;
-            for (double i = 1; i <= num; i++)
+            int i = 2;
+            Console.WriteLine("the prime factors of {0} are ",num);
+
+            for (i = 2; i <= num; i++)
             {
-                a = a+1/i;
+
+                while (num % i == 0)
+                {
+                    Console.WriteLine(i);
+                    num = num / i;
+                }
+
             }
-
-            Console.WriteLine("{0}th harmonic value is {1}", num, a);
-
         }
     }
 }
