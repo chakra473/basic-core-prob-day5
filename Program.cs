@@ -6,21 +6,16 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the number");
-            int num = int.Parse(Console.ReadLine());
-            int i = 2;
-            Console.WriteLine("the prime factors of {0} are ",num);
-
-            for (i = 2; i <= num; i++)
-            {
-
-                while (num % i == 0)
-                {
-                    Console.WriteLine(i);
-                    num = num / i;
-                }
-
-            }
+            Console.WriteLine("enter the dividend");
+            double dividend = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the divisor");
+            double divisor=int.Parse(Console.ReadLine());
+            double r;double q;
+            r= dividend%divisor;
+            q= dividend/divisor;
+            Console.WriteLine("Quotient is {0}", q);
+            Console.WriteLine("Remainder is {0}", r);
+           
         }
     }
 }
