@@ -6,17 +6,17 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the year");
-            int year = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the number");
+            int num = int.Parse(Console.ReadLine());
+            int a = 1
+               ;
+            for (int i = 1; i <= num; i++)
+            {
+                a = a * 2;
+            }
 
-            if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0)
-            {
-                Console.WriteLine("{0} is leap year",year);
-            }
-            else
-            {
-                Console.WriteLine("{0} is not a leap year",year);
-            }
+            Console.WriteLine("2 power of {0} is {1}", num, a);
+
         }
     }
 }
