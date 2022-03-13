@@ -6,16 +6,16 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the dividend");
-            int dividend = int.Parse(Console.ReadLine());
-            Console.WriteLine("enter the divisor");
-            int divisor=int.Parse(Console.ReadLine());
-            int r, q;
-            r= dividend%divisor;
-            q= dividend/divisor;
-            Console.WriteLine("Quotient is {0}", q);
-            Console.WriteLine("Remainder is {0}",r);
-           
+            Console.WriteLine("enter the two number to be swaped");
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = a;
+            Console.WriteLine("before swapping a={0},b={1}",a,b);
+            a = b;
+            b = c;
+            Console.WriteLine("after swapping  a={0},b={1}",a,b);
+
+            
         }
     }
 }
