@@ -12,15 +12,15 @@ namespace basic_core_problems
             int c=int.Parse(Console.ReadLine());
             if(a>b&&a>c)
             {
-                Console.WriteLine("{0} is greatest among three numbers ",a);
+                Console.WriteLine("{0} is largest among three numbers ",a);
             }
             else if(b>c)
             {
-                Console.WriteLine("{0} is greatest among three numbers",b);
+                Console.WriteLine("{0} is largest among three numbers", b);
             }
             else
             {
-                Console.WriteLine("{0} is greatest among three numbers", c);
+                Console.WriteLine("{0} is largest among three numbers", c);
             }
             
 
