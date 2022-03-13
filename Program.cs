@@ -6,33 +6,17 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            int head = 0;
-            int tail = 0;
-            Random rand = new Random();
+            Console.WriteLine("enter the year");
+            int year = int.Parse(Console.ReadLine());
 
-            int i = 1;
-            while (i <= 100)
+            if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0)
             {
-                int random = rand.Next(0, 2);
-                if (random == 0)
-                {
-                    head++;
-
-                }
-                else
-                {
-                    tail++;
-
-                }
-                i++;
-
-
-
+                Console.WriteLine("{0} is leap year",year);
             }
-            Console.WriteLine("number of heads :" + head);
-            Console.WriteLine("number of tails :" + tail);
-            Console.WriteLine("percentage of heads is {0}%", head);
-            Console.WriteLine("percentage of tails is {0}%", tail);
+            else
+            {
+                Console.WriteLine("{0} is not a leap year",year);
+            }
         }
     }
 }
