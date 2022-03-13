@@ -6,15 +6,17 @@ namespace basic_core_problems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the two number to be swaped");
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int c = a;
-            Console.WriteLine("before swapping a={0},b={1}",a,b);
-            a = b;
-            b = c;
-            Console.WriteLine("after swapping  a={0},b={1}",a,b);
+            Console.WriteLine("enter the number to check whether it is even or odd");
+            int n=int.Parse(Console.ReadLine());
+            if (n % 2 == 0)
+            {
+                Console.WriteLine("{0} is an even number ", n);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an odd number", n);
 
+            }
             
         }
     }
